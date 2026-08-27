@@ -17,10 +17,15 @@ import CustomersPage from '../pages/CustomersPage';
 import PaymentsPage from '../pages/PaymentsPage';
 import AdminUsersPage from '../pages/AdminUsersPage';
 
+import PrivacyPolicyPage from '../pages/PrivacyPolicyPage';
+import AccountDeletePage from '../pages/AccountDeletePage';
+
 const App = () => {
   return (
     <Routes>
       <Route path="login" element={<LoginPage />} />
+      <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+      <Route path="delete-account" element={<AccountDeletePage />} />
       <Route element={<ProtectedRoute />}>
         <Route element={<DashboardLayout />}>
           <Route index element={<DashboardPage />} />
