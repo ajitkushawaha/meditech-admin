@@ -6,4 +6,5 @@ export default defineConfig({
   server: {
     port: 5173,
   },
+  envPrefix: ['VITE_', 'API_BASE_URL'],
 });
